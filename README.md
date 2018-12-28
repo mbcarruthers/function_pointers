@@ -2,4 +2,7 @@ Just a small pet project. I was curious if I could create a single variadic temp
 
 I compile with : `clang++ -Wall -Werror -std=c++17 main.cpp -o main`
 
+
 I run with : `./main`
+
+However , it should work with and C++11 compliant compiler.
