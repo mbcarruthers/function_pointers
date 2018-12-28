@@ -11,8 +11,8 @@ void print( T t , Types... types )
 	print(types...);
 }
 
-template<typename T , typename ...Types>
-void print_vector( std::vector<T> const& v , void(*func)(Types... types ))
+template<typename T , typename ...Types> 
+void print_vector( std::vector<T> const& v , void(*func)(Types... types ) )
 {
 	for( auto const& item : v )
 		func( item );
