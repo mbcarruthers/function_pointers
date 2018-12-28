@@ -30,7 +30,11 @@ int main( void )
 
 	std::cout << "-------\n";
 	
-	std::vector<int> test  = { 1 , 5 , 7 , 9 , 10 };
-	print_vector( test , int_print );
+	std::vector<int> test_int  = { 1 , 5 , 7 , 9 , 10 };
+	print_vector( test_int , int_print );
+	
+	std::cout << "------\n";
+	std::vector<double> test_double = { 1.12 , 3.33 , 64.99 , 87.01 };
+	print_vector( test_double , double_print );
 	return 0;
 }
