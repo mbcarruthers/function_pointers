@@ -26,7 +26,7 @@ int main( void )
 
 	int_print(12);
 	double_print(12.2);
-	multiple_print( 12 , 17.7 , "Kinda surprised that this actually works");
+	multiple_print( 12 , 17.7 , "Kinda surprised that this actually works" );
 
 	std::cout << "-------\n";
 	
