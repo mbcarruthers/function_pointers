@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-
+#include <vector>
 
 void print( void ) {} // for when the parameter pack is empty
 
@@ -9,6 +9,13 @@ void print( T t , Types... types )
 {
 	std::cout << t << "\n";
 	print(types...);
+}
+
+template<typename T , typename ...Types>
+void print_vector( std::vector<T> const& v , void(*func)(Types... types ))
+{
+	for( auto const& item : v )
+		func( item);
 }
 
 int main( void )
@@ -20,6 +27,10 @@ int main( void )
 	int_print(12);
 	double_print(12.2);
 	multiple_print( 12 , 17.7 , "Kinda surprised that this actually works");
+
+	std::cout << "-------\n";
 	
+	std::vector<int> test  = { 1 , 5 , 7 , 9 , 10 };
+	print_vector( test , int_print );
 	return 0;
 }
