@@ -1,0 +1,1 @@
+Just a small pet project. I was curious if I could create a single variadic template function and create multiple diffrerent versions of function pointers to it. It ended up working , thought it was kinda cool.
